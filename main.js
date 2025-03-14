@@ -7,6 +7,7 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 0.1, 1000 );
 camera.position.z = 10;
 
+
 const canvas = document.querySelector( '#c' );
 const renderer = new THREE.WebGLRenderer( { antialias: true, canvas } );
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -19,7 +20,7 @@ controls.enableDamping = true; // Smooth rotation
 controls.dampingFactor = 0.05;
 controls.screenSpacePanning = false;
 controls.minDistance = 2;
-controls.maxDistance = 10;
+controls.maxDistance = 50;
 controls.maxPolarAngle = Math.PI; // Prevent flipping
 
 const color = 0xFFFFFF;
